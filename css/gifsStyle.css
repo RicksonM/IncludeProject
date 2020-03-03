@@ -1,0 +1,56 @@
+/* INICIO SECAO CATEGORIAS GIFS */
+section#secaoCatGifs {
+    max-width: 1200px;
+    height: 600px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#21c8f6));
+
+
+    margin: 50px auto 0 auto;
+    border-radius: 45px;
+    padding-top: 30px;  
+}
+
+h1#tituloSecaoCatGifs {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#divDasecaoCatGifs {
+    margin-left: 40px;
+}
+
+div#divDasecaoCatGifs > a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+div.catSaudacao {
+    width: 252px;
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #2290cf;
+    border-radius: 10px;
+}
+
+div.catSaudacao:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+}
+
+div.catSaudacao > img {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.catSaudacao > p {
+    text-align: center;
+}
+/* FIM SECAO CATEGORIAS GIFS */
+
+footer {
+    margin-top: 100px;
+}

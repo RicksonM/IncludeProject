@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/indexStyle.css">
+    <link rel="stylesheet" href="/css/formStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>Includ+</title>
+</head>
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <p id="titulo" title="Includ+"><a href="/">Includ+</a></p>
+        <ul id="listaPrincipal">
+            <li class="itensPrincipais"><a href="/"><i class='fas fa-home'></i> Início</a></li>
+            <li class="itensPrincipais"><a href="/gifs.html"><i class='fas fa-th-large'></i> Categorias</a></li>
+        </ul>
+        <button id="ButaoListarCadastrados"><a href="listar"><i class='far fa-list-alt'></i> Listar Cadastrados</a></button>
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO SECAO CADASTRO -->
+    <section id="cadastro">
+        <p id="pDaSecaoCadastro">Cadastro de conta</p>
+
+        <form id="formCadastro" method="post" name="form">
+            <label for="inputNomeCompleto" class="labelDeCadastro">Nome completo</label>
+            <input type="text" name="nome" id="inputNomeCompleto" placeholder="Digite seu nome completo">
+
+            <label for="inputDataNascimento" class="labelDeCadastro">Data de nascimento</label>
+            <input type="date" name="datanas" id="inputDataNascimento">
+
+            <label for="inputEmail" class="labelDeCadastro">E-mail</label>
+            <input type="email" name="email" id="inputEmail" placeholder="Digite seu e-mail">
+
+            <label for="inputSenha" class="labelDeCadastro">Senha</label>
+            <input type="password" name="senha" id="inputSenha" placeholder="Insira sua senha">
+
+            <label for="inputConfirmarSenha" class="labelDeCadastro">Confirme a senha</label>
+            <input type="password" name="conf_senha" id="inputConfirmarSenha" placeholder="Confirme sua senha">
+
+            <input type="submit" value="Cadastrar">
+        </form>
+
+        <p id="pJaCadastrado">Já cadastrado? <a href="index.html">Entrar</a></p>
+    </section>
+    <!-- FIM SECAO CADASTRO -->
+
+    <!-- INICIO RODAPE -->
+    <footer>
+        <p id="pDireitos">&copy; 2019 Includ+ Company - Todos os direitos reservados</p>
+    </footer>
+    <!-- INICIO RODAPE -->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
