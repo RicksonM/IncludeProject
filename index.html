@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" 
+                   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/indexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>Includ+</title>
+</head>
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <p id="titulo" title="Includ+"><a href="/">Includ+</a></p>
+        <ul id="listaPrincipal">
+            <li class="itensPrincipais"><a href="/"><i class='fas fa-home'></i> Início</a></li>
+            <li class="itensPrincipais"><a href="/gifs.html"><i class='fas fa-th-large'></i> Categorias</a></li>
+        </ul>
+        <button id="ButaoListarCadastrados"><a href="/listar"><i class='far fa-list-alt'></i> Listar Cadastrados</a></button>
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO SECAO ENTRAR -->
+    <section id="entrar">
+        <p id="pDaSecaoEntrar">Entre na sua conta</p>
+
+        <form id="formEntrar" action="#" method="post" name="form">
+            <label for="inputEmail" class="labelDeEntrada">E-mail</label>
+            <input type="email" name="email" id="inputEmail" placeholder="Digite seu e-mail">
+
+            <label for="inputSenha" class="labelDeEntrada">Senha</label>
+            <input type="password" name="senha" id="inputSenha" placeholder="Insira a senha">
+
+           
+            <input type="submit" value="Entrar" name="enviar_form">
+        </form>
+
+        <p id="pNaoCadastrado">Não cadastrado? <a href="/form.html">Crie uma conta</a></p>
+    </section>
+    <!-- FIM SECAO ENTRAR -->
+
+    <!-- INICIO RODAPE -->
+    <footer>
+        <p id="pDireitos">&copy; 2019 Includ+ Company - Todos os direitos reservados</p>
+    </footer>
+    <!-- INICIO RODAPE -->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
