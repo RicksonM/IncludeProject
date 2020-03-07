@@ -13,10 +13,10 @@
 <body>
     <!-- INICIO HEADER -->
     <header>
-        <p id="titulo" title="Includ+"><a href="/">Includ+</a></p>
+        <p id="titulo" title="Includ+"><a href="index.html">Includ+</a></p>
         <ul id="listaPrincipal">
-            <li class="itensPrincipais"><a href="/"><i class='fas fa-home'></i> Início</a></li>
-            <li class="itensPrincipais"><a href="/gifs.html"><i class='fas fa-th-large'></i> Categorias</a></li>
+            <li class="itensPrincipais"><a href="index.html"><i class='fas fa-home'></i> Início</a></li>
+            <li class="itensPrincipais"><a href="gifs.html"><i class='fas fa-th-large'></i> Categorias</a></li>
         </ul>
         <button id="ButaoListarCadastrados"><a href="/listar"><i class='far fa-list-alt'></i> Listar Cadastrados</a></button>
     </header>
@@ -29,15 +29,15 @@
         <div id="divDasecaoCatGifs">
 
             <div class="catSaudacao">
-                <img src="/img/gifs/transporte/metro.gif" alt="Metrô em libras">
+                <img src="img/gifs/transporte/metro.gif" alt="Metrô em libras">
                 <p class="DesGif">Metrô</p>
-                <button class="btnEnviar" title="Enviar para" onclick="abrirTelaGifMetro()"><i class='fas fa-share' style="font-size:48px;"></i></button>
+                <button class="btnEnviar" title="Enviar para" onclick="abrirLogin()"><i class='fas fa-share' style="font-size:48px;"></i></button>
             </div>
 
             <div class="catSaudacao">
-                <img src="/img/gifs/transporte/onibus.gif" alt="Ônibus em libras">
+                <img src="img/gifs/transporte/onibus.gif" alt="Ônibus em libras">
                 <p class="DesGif">Ônibus</p>
-                <button class="btnEnviar" title="Enviar para" onclick="abrirTelaGifOnibus()"><i class='fas fa-share' style="font-size:48px;"></i></button>
+                <button class="btnEnviar" title="Enviar para" onclick="abrirLogin()"><i class='fas fa-share' style="font-size:48px;"></i></button>
             </div>
         </div>
     </section>
@@ -47,30 +47,31 @@
     <footer>
         <p id="pDireitos">&copy; 2019 Includ+ Company - Todos os direitos reservados</p>
     </footer>
-    <!-- INICIO RODAPE -->
+    <!-- FIM RODAPE -->
 
-    <!-- INICIO FIXED -->
-    <!-- Tela Um -->
-    <div id="telaDeEnvioGifOi" class="telaDeEnvio">
-        <p id="pEnvio">Enviar para</p>
-        <i class='fab fa-whatsapp' style='font-size:82px' title="Whatsapp" onclick="enviarMensWhatsMetro()"></i>
-        <i class='fab fa-facebook-messenger' style='font-size:74px' title="Messenger" onclick=""></i>
-
-        <i id="fecharTelaDeEnvio" class='fas fa-window-close' style='font-size:48px' title="Fechar" onclick="fecharTelaGifMetro()"></i>
+    <!-- INICIO ALERTA LOGIN FIXED -->
+    <div id="modal">
+        <section id="entrarEnviarGif">
+            <p id="pDaSecaoEntrar">Você precisa estar logado para enviar</p>
+    
+            <form id="formEntrar" action="#" method="post" name="form">
+                <label for="inputEmail" class="labelDeEntrada">E-mail</label>
+                <input type="email" name="email" id="inputEmail" placeholder="Digite seu e-mail">
+    
+                <label for="inputSenha" class="labelDeEntrada">Senha</label>
+                <input type="password" name="senha" id="inputSenha" placeholder="Insira a senha">
+               
+                <input type="submit" value="Entrar" name="enviar_form">
+            </form>
+    
+            <p id="pNaoCadastrado">Não cadastrado? <a href="form.html">Crie uma conta</a></p>
+            <i id="fecharTelaDeLogin" class='fas fa-window-close' style='font-size:48px' title="Fechar" onclick="fecharLogin()"></i>
+        </section>
     </div>
-
-    <!-- Tela Dois -->
-    <div id="telaDeEnvioGifOla" class="telaDeEnvio">
-        <p id="pEnvio">Enviar para</p>
-        <i class='fab fa-whatsapp' style='font-size:82px' title="Whatsapp" onclick="enviarMensWhatsOnibus()"></i>
-        <i class='fab fa-facebook-messenger' style='font-size:74px' title="Messenger" onclick=""></i>
-
-        <i id="fecharTelaDeEnvio" class='fas fa-window-close' style='font-size:48px' title="Fechar" onclick="fecharTelaGifOnibus()"></i>
-    </div>
-     <!-- FIM FIXED -->
+    <!-- FIM ALERTA LOGIN FIXED -->
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="/js/scriptCatTransporte.js"></script>
+    <script src="js/alertaParaLogar.js"></script>
 </body>
 
 </html>

@@ -34,7 +34,7 @@ input[type="text"] {
     border: 0;
     margin-bottom: 10px;
     font-size: 18px;
-    background-image: url(/img/icons/iconUser.png);
+    background-image: url(/IncludeProject/img/icons/iconUser.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
     padding-left: 35px;
@@ -48,7 +48,7 @@ input[type="date"] {
     border: 0;
     margin-bottom: 10px;
     font-size: 18px;
-    background-image: url(/img/icons/iconCalendar.png);
+    background-image: url(/IncludeProject/img/icons/iconCalendar.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
     padding-left: 35px;
@@ -62,7 +62,7 @@ input[type="email"] {
     border: 0;
     margin-bottom: 10px;
     font-size: 18px;
-    background-image: url(/img/icons/iconEmail.png);
+    background-image: url(/IncludeProject/img/icons/iconEmail.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
     padding-left: 35px;
@@ -75,7 +75,7 @@ input[type="password"] {
     border: 0;
     margin-bottom: 10px;
     font-size: 18px;
-    background-image: url(/img/icons/iconKey.png);
+    background-image: url(/IncludeProject/img/icons/iconKey.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
     padding-left: 35px;
@@ -89,7 +89,7 @@ input[type="submit"] {
     margin-top: 10px;
     margin-left: 230px;
     cursor: pointer;
-    background-image: url(/img/icons/iconEntrar.png);
+    background-image: url(/IncludeProject/img/icons/iconEntrar.png);
     background-repeat: no-repeat;
     background-position: 110px 11px;
 }

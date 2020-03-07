@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/IncludeProject/css/indexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/IncludeProject/css/catSaudacaoStyle.css">
+    <title>Categoria Transporte</title>
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <p id="titulo" title="Includ+"><a href="index.html">Includ+</a></p>
+        <ul id="listaPrincipal">
+            <li class="itensPrincipais"><a href="index.html"><i class='fas fa-home'></i> Início</a></li>
+            <li class="itensPrincipais"><a href="gifs.html"><i class='fas fa-th-large'></i> Categorias</a></li>
+        </ul>
+        <button id="ButaoListarCadastrados"><a href="/listar"><i class='far fa-list-alt'></i> Listar Cadastrados</a></button>
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO SECAO CATEGORIAS GIFS -->
+    <section id="secaoCatGifs">
+        <h1 id="tituloSecaoCatGifs">Gifs</h1>
+
+        <div id="divDasecaoCatGifs">
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/transporte/metro.gif" alt="Metrô em libras">
+                <p class="DesGif">Metrô</p>
+                <button class="btnEnviar" title="Enviar para" onclick="abrirTelaGifMetro()"><i class='fas fa-share' style="font-size:48px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/transporte/onibus.gif" alt="Ônibus em libras">
+                <p class="DesGif">Ônibus</p>
+                <button class="btnEnviar" title="Enviar para" onclick="abrirTelaGifOnibus()"><i class='fas fa-share' style="font-size:48px;"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- FIM SECAO CATEGORIAS GIFS -->
+
+    <!-- INICIO RODAPE -->
+    <footer>
+        <p id="pDireitos">&copy; 2019 Includ+ Company - Todos os direitos reservados</p>
+    </footer>
+    <!-- INICIO RODAPE -->
+
+    <!-- INICIO FIXED -->
+    <!-- Tela Um -->
+    <div id="telaDeEnvioGifOi" class="telaDeEnvio">
+        <p id="pEnvio">Enviar para</p>
+        <i class='fab fa-whatsapp' style='font-size:82px' title="Whatsapp" onclick="enviarMensWhatsMetro()"></i>
+        <i class='fab fa-facebook-messenger' style='font-size:74px' title="Messenger" onclick=""></i>
+
+        <i id="fecharTelaDeEnvio" class='fas fa-window-close' style='font-size:48px' title="Fechar" onclick="fecharTelaGifMetro()"></i>
+    </div>
+
+    <!-- Tela Dois -->
+    <div id="telaDeEnvioGifOla" class="telaDeEnvio">
+        <p id="pEnvio">Enviar para</p>
+        <i class='fab fa-whatsapp' style='font-size:82px' title="Whatsapp" onclick="enviarMensWhatsOnibus()"></i>
+        <i class='fab fa-facebook-messenger' style='font-size:74px' title="Messenger" onclick=""></i>
+
+        <i id="fecharTelaDeEnvio" class='fas fa-window-close' style='font-size:48px' title="Fechar" onclick="fecharTelaGifOnibus()"></i>
+    </div>
+     <!-- FIM FIXED -->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jsCatEnvioLogado/scriptCatTransporte.js"></script>
+</body>
+
+</html>
