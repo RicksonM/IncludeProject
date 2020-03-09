@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/IncludeProject/css/indexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/IncludeProject/css/todasGifsStyle.css">
+    <title>Categoria Transporte</title>
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <p id="titulo" title="Includ+"><a href="/IncludeProject/index.html">Includ+</a></p>
+        <ul id="listaPrincipal">
+            <li class="itensPrincipais"><a href="/IncludeProject/index.html"><i class='fas fa-home'></i> Início</a></li>
+            <li class="itensPrincipais"><a href="/IncludeProject/gifs.html"><i class='fas fa-th-large'></i> Categorias</a></li>
+        </ul>
+        <button id="ButaoListarCadastrados"><a href="/listar"><i class='far fa-list-alt'></i> Listar Cadastrados</a></button>
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO SECAO CATEGORIAS GIFS -->
+    <section id="secaoCatGifs">
+        <h1 id="tituloSecaoCatGifs">Enviar várias Gifs</h1>
+    
+        <div id="divDasecaoCatGifs">
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/transporte/metro.gif" alt="Metrô em libras">
+                <p class="DesGif">Metrô</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarMetro()"><i class='fas fa-share' style="font-size:23px"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/transporte/onibus.gif" alt="Ônibus em libras">
+                <p class="DesGif">Ônibus</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarOnibus()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/alimento/cafe_com_leite.gif" alt="Café com leite em libras">
+                <p class="DesGif">Café com leite</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarCafeComLeite()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/alimento/feijao_com_arroz.gif" alt="Feijão com arroz em libras">
+                <p class="DesGif">Feijão com arroz</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarFeijaoComArroz()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/profissao/enfermeiro.gif" alt="Enfermeiro em libras">
+                <p class="DesGif">Enfermeiro</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarEnfermeiro()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/profissao/professor.gif" alt="Professor em libras">
+                <p class="DesGif">Professor</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarProfessor()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/saudacao/ola_gif.gif" alt="Olá em libras">
+                <p class="DesGif">Olá</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarOla()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/saudacao/oi_gif.gif" alt="Oi em libras">
+                <p class="DesGif">Oi</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarOi()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/saudacao/como_vai_gif.gif" alt="Como vai? em libras">
+                <p class="DesGif">Como vai?</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarComoVai()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/saudacao/boa_noite_gif.gif" alt="Boa noite em libras">
+                <p class="DesGif">Boa noite</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarBoaNoite()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/saudacao/boa_tarde_gif.gif" alt="Boa tarde em libras">
+                <p class="DesGif">Boa tarde</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarBoaTarde()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="/IncludeProject/img/gifs/saudacao//bom_dia_gif.gif" alt="Bom dia em libras">
+                <p class="DesGif">Bom dia</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarBomDia()"><i class='fas fa-share' style="font-size:23px;"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- FIM SECAO CATEGORIAS GIFS -->
+
+    <!-- INICIO RODAPE -->
+    <footer>
+        <p id="pDireitos">&copy; 2019 Includ+ Company - Todos os direitos reservados</p>
+    </footer>
+    <!-- FIM RODAPE -->
+
+    <!-- INICIO INPUTTEXT FIXED -->
+    <div id="divInputFixed">
+        <textarea name="" id="textAreaEnviarGifs" autofocus oninput="ReceberValores()"></textarea>
+        <i id="EnviarTextoGifs" class='fas fa-location-arrow' style='font-size:68px' title="Enviar" onclick="enviarPalavras()"></i>
+    </div>
+    <!-- FIM INPUTTEXT FIXED -->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jsCatEnvioLogado/scriptTodasGifs.js"></script>
+</body>
+
+</html>
