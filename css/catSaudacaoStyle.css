@@ -142,25 +142,28 @@ div#modal {
     height: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.418);
     display: none;
 }
 
 section#entrarEnviarGif {
-    width: 800px;
-    height: 500px;
+    width: 550px;
+    height: 300px;
     background-color: #93d180;
     border-radius: 3px;
     padding-top: 50px;
-    margin: 30% 0 0 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.24) 0px 5px 5px 0px;
 }
 
 /* Incio form */
 form#formEntrar {
-    width: 600px;
-    margin-left: 100px;
+    width: 450px;
+    margin: 0 auto;
 }
 
 p#pDaSecaoEntrar {
@@ -176,48 +179,44 @@ label.labelDeEntrada {
 }
 
 input[type="email"] {
-    width: 600px;
-    height: 30px;
-    border-radius: 45px;
+    width: 100%;
     border: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-    background-image: url(/IncludeProject/img/icons/iconEmail.png);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    /* background-image: url(/IncludeProject/img/icons/iconEmail.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
-    padding-left: 35px;
+    padding-left: 35px; */
 }
 
 input[type="password"] {
-    width: 600px;
-    height: 30px;
-    border-radius: 45px;
+    width: 100%;
     border: 0;
-    margin-bottom: 20px;
-    font-size: 18px;
-    background-image: url(/IncludeProject/img/icons/iconKey.png);
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+    /* background-image: url(/IncludeProject/img/icons/iconKey.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
-    padding-left: 35px;
+    padding-left: 35px; */
 }
 
 input[type="submit"] {
-    padding: 10px 35px 10px 10px;
-    border-radius: 2px;
+    padding: 15px;
     border: 0;
-    font-size: 22px;
-    margin-left: 240px;
+    font-size: 14px;
     cursor: pointer;
-    background-image: url(/IncludeProject/img/icons/iconEntrar.png);
+    /* background-image: url(/IncludeProject/img/icons/iconEntrar.png);
     background-repeat: no-repeat;
-    background-position: 75px 11px;
+    background-position: 75px 11px; */
 }
 /* Fim form */
 
 p#pNaoCadastrado {
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 12px;
     text-align: center;
-    font-size: 18px;
 }
 
 p#pNaoCadastrado a {
@@ -232,7 +231,7 @@ p#pNaoCadastrado a:hover {
 i#fecharTelaDeLogin {
     position: absolute;
     top: -0.5%;
-    right: 0;
+    right: -0.1%;
     cursor: pointer;
 }
 /* FIM SECAO ALERTA LOGIN */

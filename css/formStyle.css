@@ -1,18 +1,20 @@
 /* INICIO SECAO ENTRAR */
 
 section#cadastro {
-    width: 800px;
-    height: 700px;
+    width: 550px;
+    height: 500px;
     background-color: #21bb62;
     margin: 100px auto 0 auto;
     border-radius: 3px;
     padding-top: 50px;  
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.24) 0px 5px 5px 0px;
+    position: relative; 
 }
 
 /* Incio form */
 form#formCadastro {
-    width: 600px;
-    margin-left: 100px;
+    width: 450px;
+    margin: 0 auto;
 }
 
 p#pDaSecaoCadastro {
@@ -28,77 +30,77 @@ label.labelDeCadastro {
 }
 
 input[type="text"] {
-    width: 600px;
-    height: 30px;
-    border-radius: 2px;
+    width: 100%;
     border: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-    background-image: url(/IncludeProject/img/icons/iconUser.png);
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    background-color: rgb(242, 242, 242);
+    /* background-image: url(/IncludeProject/img/icons/iconUser.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
     padding-left: 35px;
-    z-index: 50;
+    z-index: 50; */
 }
 
 input[type="date"] {
-    width: 600px;
-    height: 30px;
-    border-radius: 2px;
+    width: 100%;
     border: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-    background-image: url(/IncludeProject/img/icons/iconCalendar.png);
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    background-color: rgb(242, 242, 242);
+    /* background-image: url(/IncludeProject/img/icons/iconCalendar.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
     padding-left: 35px;
-    z-index: 50;
+    z-index: 50; */
 }
 
 input[type="email"] {
-    width: 600px;
-    height: 30px;
-    border-radius: 2px;
+    width: 100%;
     border: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-    background-image: url(/IncludeProject/img/icons/iconEmail.png);
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 15px;
+    /* background-image: url(/IncludeProject/img/icons/iconEmail.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
-    padding-left: 35px;
+    padding-left: 35px; */
 }
 
 input[type="password"] {
-    width: 600px;
-    height: 30px;
-    border-radius: 2px;
+    width: 100%;
     border: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-    background-image: url(/IncludeProject/img/icons/iconKey.png);
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 15px;
+    /* background-image: url(/IncludeProject/img/icons/iconKey.png);
     background-repeat: no-repeat;
     background-position: 5px 3px;
-    padding-left: 35px;
+    padding-left: 35px; */
 }
 
 input[type="submit"] {
-    padding: 10px 35px 10px 10px;
-    border-radius: 2px;
+    width: 100%;
+    padding: 15px;
     border: 0;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 230px;
+    font-size: 14px;
     cursor: pointer;
-    background-image: url(/IncludeProject/img/icons/iconEntrar.png);
+    /* background-image: url(/IncludeProject/img/icons/iconEntrar.png);
     background-repeat: no-repeat;
-    background-position: 110px 11px;
+    background-position: 110px 11px; */
 }
 /* Fim form */
 
 p#pJaCadastrado {
-    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
 }
 
 p#pJaCadastrado a {
