@@ -15,6 +15,7 @@ section#cadastro {
 form#formCadastro {
     width: 450px;
     margin: 0 auto;
+    position: relative;
 }
 
 p#pDaSecaoCadastro {
@@ -57,6 +58,11 @@ input[type="date"] {
     background-position: 5px 3px;
     padding-left: 35px;
     z-index: 50; */
+}
+
+input[id="inputDataNascimentoblock"] {
+    position: absolute;
+    top: 64px;
 }
 
 input[type="email"] {

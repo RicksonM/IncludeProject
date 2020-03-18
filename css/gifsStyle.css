@@ -4,12 +4,13 @@ section#secaoCatGifs {
     height: 600px;
     background-color: #00bd56;
     margin: 50px auto 0 auto;
-    border-radius: 45px;
+    border-radius: 20px;
     padding-top: 30px;  
 }
 
 h1#tituloSecaoCatGifs {
     font-size: 40px;
+    color: aliceblue;
     text-align: center;
     margin-bottom: 20px;
 }
