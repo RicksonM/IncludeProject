@@ -1,4 +1,4 @@
-// Btn CopyUm
+// BTN COPY
 for (var index = 0; index < 2; index++) {
     var imagemCopy = document.createElement("img");
     imagemCopy.src = "/IncludeProject/img/icons/iconCopy.svg";

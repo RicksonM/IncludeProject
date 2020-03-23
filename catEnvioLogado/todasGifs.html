@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/IncludeProject/css/indexStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/IncludeProject/css/todasGifsStyle.css">
-    <title>Categoria Transporte</title>
+    <title>Todas Gifs</title>
 </head>
 
 <body>
@@ -110,12 +110,24 @@
     </footer>
     <!-- FIM RODAPE -->
 
-    <!-- INICIO INPUTTEXT FIXED -->
+    <!-- INICIO FIXED -->
+    <!-- tela de envio todas mensagens -->
     <div id="divInputFixed">
         <textarea name="" id="textAreaEnviarGifs" autofocus oninput="ReceberValores()"></textarea>
-        <img src="/IncludeProject/img/icons/iconSend.svg" id="EnviarTextoGifs" title="Enviar" onclick="enviarPalavras()"></i>
+        <img src="/IncludeProject/img/icons/iconSend.svg" id="EnviarTextoGifs" title="Enviar"  onclick="abrirTela()">
     </div>
-    <!-- FIM INPUTTEXT FIXED -->
+
+     <!-- Tela trasnparente escolher pra onde enviar -->
+     <div id="telaTransparenteUm" class="telaTransparente">
+        <div id="telaDeEnvioGifOi" class="telaDeEnvio">
+            <p id="pEnvio">Enviar para</p>
+            <img src="/IncludeProject/img/icons/iconWhatsapp.svg" class="fab" title="Whatsapp" onclick="enviarPalavras()"></i>
+            <img src="/IncludeProject/img/icons/iconMessenger.svg" class='fab' title="Messenger" onclick="">
+            
+            <i id="fecharTelaDeEnvio" class='fas fa-window-close' style='font-size:48px' title="Fechar" onclick="fecharTela()"></i>
+        </div>
+    </div>
+    <!-- FIM FIXED -->
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="jsCatEnvioLogado/scriptTodasGifs.js"></script>
