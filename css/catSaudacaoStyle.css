@@ -136,8 +136,24 @@ img.fab:first-of-type {
     margin-left: 50px;
 }
 
+img.fab:last-of-type {
+    width: 40px;
+    margin-left: 13px;
+    opacity: 0.5;
+}
+
+img.fab:last-of-type:hover {
+    opacity: 0.4;
+}
+
 img.fab:hover {
     opacity: 0.8;
+}
+
+input.txtEscondido {
+    position: relative; 
+    z-index: -1; 
+    opacity: 0;
 }
 
 i#fecharTelaDeEnvio {

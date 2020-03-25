@@ -85,3 +85,50 @@ function enviarPalavras() {
         window.open(`https://api.whatsapp.com/send?text=${todasPalavras}`);  
     } 
 }
+
+// BTN COPY
+for (var index = 0; index < 1; index++) {
+    var imagemCopy = document.createElement("img");
+    imagemCopy.src = "/IncludeProject/img/icons/iconCopy.svg";
+    imagemCopy.className = "fab";
+    imagemCopy.title = "Copiar texto";
+    document.getElementsByClassName("telaDeEnvio")[index].appendChild(imagemCopy);
+
+    var inptext = document.createElement("input");
+    inptext.type = "text";
+    if (index == 0) {
+        inptext.id = "txtGifUm";
+    }
+    inptext.className = "txtEscondido";
+    document.getElementsByClassName("telaDeEnvio")[index].appendChild(inptext);
+}
+
+document.getElementsByClassName("fab")[2].addEventListener("click", copiarTextoUm);
+
+function copiarTextoUm() {
+    var textoDesGif = document.getElementById("textAreaEnviarGifs").value;
+    var copyText = document.getElementById("txtGifUm");
+    copyText.value = textoDesGif;
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Copied the text: " + copyText.value);
+}
+
+// INICIO ABRIR TELA DE ENVIO 
+window.onclick = function(event) {
+    if (event.target == telaTransparenteUm) {
+        telaTransparenteUm.style.display = "none";
+    }
+  }
+
+// Tela de selecao pra onde enviar mensagem
+function abrirTela() {
+    var exibirTelaEnvio = document.getElementById("telaTransparenteUm");
+    exibirTelaEnvio.style.display = "block";
+}
+
+function fecharTela() {
+    var exibirTelaEnvio = document.getElementById("telaTransparenteUm");
+    exibirTelaEnvio.style.display = "none";
+}
