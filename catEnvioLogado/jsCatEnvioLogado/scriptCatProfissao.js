@@ -27,7 +27,13 @@ function copiarTextoUm() {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
+
+    var divCopySucess = document.getElementsByClassName("textoCopy")[0];
+    divCopySucess.style.display = "block";
+    setTimeout(copySucess, 2000);
+    function copySucess() {
+        divCopySucess.style.display = "none";
+    }
 }
 
 function copiarTextoDois() {
@@ -37,7 +43,13 @@ function copiarTextoDois() {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
+
+    var divCopySucess = document.getElementsByClassName("textoCopy")[1];
+    divCopySucess.style.display = "block";
+    setTimeout(copySucess, 2000);
+    function copySucess() {
+        divCopySucess.style.display = "none";
+    }
 }
 
 // INICIO ABRIR TELA DE ENVIO

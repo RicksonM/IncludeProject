@@ -157,8 +157,8 @@ input.txtEscondido {
 }
 
 i#fecharTelaDeEnvio {
+    opacity: 0.7;
     position: absolute;
-    border-radius: 45px;
     top: 1px;
     right: 5px;
     cursor: pointer;
@@ -259,7 +259,27 @@ p#pNaoCadastrado a:hover {
     text-decoration: underline;
 }
 
+div.textoCopy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+div.textoCopy > img {
+    width: 40px;
+    border-radius: 25px;
+}
+
+div.textoCopy > span {
+    font-weight: bold;
+    position: relative;
+    top: -13px;
+}
+
 i#fecharTelaDeLogin {
+    opacity: 0.7;
     position: absolute;
     top: -0.5%;
     right: -0.1%;
