@@ -156,9 +156,28 @@ input.txtEscondido {
     opacity: 0;
 }
 
-i#fecharTelaDeEnvio {
+div.textoCopy {
     position: absolute;
-    border-radius: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+div.textoCopy > img {
+    width: 40px;
+    border-radius: 25px;
+}
+
+div.textoCopy > span {
+    font-weight: bold;
+    position: relative;
+    top: -13px;
+}
+
+i#fecharTelaDeEnvio {
+    opacity: 0.7;
+    position: absolute;
     top: 1px;
     right: 5px;
     cursor: pointer;
